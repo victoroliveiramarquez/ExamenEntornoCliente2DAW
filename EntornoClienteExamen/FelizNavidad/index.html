@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Autor: Víctor Oliveira
+Examen práctico fin de trimestre Desarrollo Web en Entorno Cliente 2DAW
+
+REGLAS:
+- Paso 1 creamos index HTML estilos CSS
+- Paso 2 los relacionamos
+- Paso 3 el body será nuestro porta retratos por lo tanto le damos el estilo necesario para que ocupe todo el viewport
+- Paso 4 en el CSS nos aseguramos con el selector asterisco de eliminar margen y padding y poner box sizing border box
+- Paso 6 mentalmente imaginamos que en ese portarretratos coincidirán tres elementos como si fueran capas superpuestas. 
+Como si estuvieran cada una fijadas con una chincheta al borde superior izquierdo del body. A eso lo logramos posicionando de forma absoluta cada uno de esos elementos respecto del body. 
+Entonces en el html dentro del body ponemos dichos elementos uno a continuación del otro que son el texto de advertencia luego la imagen y luego el saludo. 
+Y nos aseguramos de que los elementos ocupan toda el área del portarretratos y la imagen cubra totalmente dicha área con el atributo object fit cover.
+- Paso 5 elegimos una imagen adecuada la convertimos al formato web p solicitado y la dejamos en nuestra carpeta de trabajo
+- Paso 7 aplicamos estilos para que por defecto el mensaje de advertencia no se vea. Hay tres métodos que podemos combinar para lograr esto. 
+Una es trabajar con el atributo Zeta index,  otra usando opacity y la otra con display none o visibility hidden. Yo propongo uno pero me gustaría que cada uno elija el que prefiera. 
+Utilizaré z index y opacity para el texto de advertencia y para la imagen. 
+Por defecto la imagen tapará al texto de advertencia, eso se logra con valores z index 0 para la advertencia y uno para la imagen. 
+Al elemento del saludo navideño le pondré un fondo transparente con z index dos y trabajaré atributos del texto como sombras bordes colores y tamaños para que sea siempre bien visible. 
+También en el texto usaré la fórmula Calc y la unidad de medida em para lograr la responsabilidad solicitada.
+- Paso 8 con el media query en la hoja de estilos nos aseguramos de poner el Zeta index en dos al mensaje de advertencia cuando la orientación sea horizontal. OPCIÓN. 
+Para que siempre se vea nuestro mensaje navideño, podemos forzar en este mediaquery a que el tamaño del body sea vertical, poniendo el ancho al 75% del alto.
+- Paso 9 nos encargamos de dar visibilidad al saludo solamente cuando se haya hecho clic o puesto el cursor sobre la imagen.
+- Paso 10 subimos el trabajo al repositorio público generamos el QR y verificamos que funcione correctamente.
+-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad</title>
+    <link rel="stylesheet" href="./navidad.css" />
+
+</head>
+
+<body>
+
+     <img src="reto-postales-navidad-2016-vertical.jpg"/>
+
+     <p id="saludo">
+        Feliz Navidad<br />
+        Te desea<br/>
+        <span>Víctor Oliveira</span>
+
+     </p>
+
+     <script src="./navidad.js"></script>
+    
+</body>
+</html>
