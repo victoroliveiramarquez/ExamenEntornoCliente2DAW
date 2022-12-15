@@ -14,7 +14,7 @@ REGLAS:
 Como si estuvieran cada una fijadas con una chincheta al borde superior izquierdo del body. A eso lo logramos posicionando de forma absoluta cada uno de esos elementos respecto del body. 
 Entonces en el html dentro del body ponemos dichos elementos uno a continuación del otro que son el texto de advertencia luego la imagen y luego el saludo. 
 Y nos aseguramos de que los elementos ocupan toda el área del portarretratos y la imagen cubra totalmente dicha área con el atributo object fit cover.
-- Paso 5 elegimos una imagen adecuada la convertimos al formato web p solicitado y la dejamos en nuestra carpeta de trabajo
+- Paso 5 elegimos una imagen adecuada la convertimos al formato webp solicitado y la dejamos en nuestra carpeta de trabajo
 - Paso 7 aplicamos estilos para que por defecto el mensaje de advertencia no se vea. Hay tres métodos que podemos combinar para lograr esto. 
 Una es trabajar con el atributo Zeta index,  otra usando opacity y la otra con display none o visibility hidden. Yo propongo uno pero me gustaría que cada uno elija el que prefiera. 
 Utilizaré z index y opacity para el texto de advertencia y para la imagen. 
@@ -39,14 +39,16 @@ Para que siempre se vea nuestro mensaje navideño, podemos forzar en este mediaq
 
 <body>
 
-     <img src="reto-postales-navidad-2016-vertical.jpg"/>
+     <img id="imagen" 
+     src="reto-postales-navidad-2016-vertical.webp"/>
 
-     <p id="saludo">
+     <div id="cajaTexto"><p id="saludo">
         Feliz Navidad<br />
         Te desea<br/>
         <span>Víctor Oliveira</span>
 
      </p>
+    </div>
 
      <script src="./navidad.js"></script>
     
