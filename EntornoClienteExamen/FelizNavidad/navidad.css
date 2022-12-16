@@ -43,6 +43,7 @@
   #estrellaBelen{
     height: 8vh;
     width: 8vw;
+    display: flex;
     position: absolute;
     right: 20px;
   
@@ -76,13 +77,13 @@
 
   
   @media(orientation:landscape) {
-    .principal {
+    .contenido {
       width: 40vw;
     }
   
   
   }
-  
+
   /*REPASAR ESTE MEDIA*/
 /* @media all and (orientation: landscape){ 
     body{
