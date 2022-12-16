@@ -21,7 +21,7 @@
   
   
   }
-  
+  /*Segunda imagen cuando hacemos click*/
   #tigreRegalo {
     position:absolute;
     width: 100vw;
@@ -31,7 +31,7 @@
     justify-content: center;
   }
   
-  
+  /*Fondo del portaretratos*/
   #base{
     background-color: rgba(255, 255, 255, 0.1);
       position: absolute;
@@ -39,6 +39,7 @@
       height: 100vh;
   }
   
+  /*Colocamos la imagen en la aprte superir derecha*/
   #estrellaBelen{
     height: 8vh;
     width: 8vw;
@@ -46,7 +47,7 @@
     right: 20px;
   
   }
-
+/*Frase que saldrá centrada en el portaretratos*/
   #felicitacion{
     
     background-color: gold;
@@ -67,6 +68,7 @@
     
   }
 
+  /*ocultamos el reproductor de audio que se encontraria en la parte superior derecha*/
   audio{
     display: none;
   }
@@ -80,6 +82,8 @@
   
   
   }
+  
+  /*REPASAR ESTE MEDIA*/
 /* @media all and (orientation: landscape){ 
     body{
         background-size: contain;
