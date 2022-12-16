@@ -19,14 +19,15 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  object-fit: contain;
   
   
   }
   /*Segunda imagen cuando hacemos click*/
   #tigreRegalo {
     position:absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     background-size: cover;
     visibility: hidden;
     justify-content: center;
