@@ -44,6 +44,8 @@
   #estrellaBelen{
     height: 8vh;
     width: 8vw;
+    margin-left: 90vw;
+    margin-bottom: 90vh;
     display: flex;
     position: absolute;
     right: 20px;
@@ -74,7 +76,13 @@
   audio{
     display: none;
   }
-  
+
+  img{
+    width: 100vw;
+      height: 100vh;
+      background-size: cover;
+  }
+
 
   
   @media(orientation:landscape) {
