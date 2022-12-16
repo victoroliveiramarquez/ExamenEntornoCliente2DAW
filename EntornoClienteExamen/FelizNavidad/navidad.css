@@ -14,7 +14,8 @@
   
   .contenido {
   display: flex;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   overflow: hidden;
   justify-content: center;
